@@ -93,10 +93,11 @@ code {
 }
 
 li:hover {
-    @apply primary-bg rounded-md px-3 pt-[0.5rem] pb-[0.4rem] text-sm font-bold text-white;
+    @apply primary-bg rounded-md font-bold text-white;
 }
 li {
-   @apply bg-white rounded-md px-3 pt-[0.5rem] pb-[0.4rem] text-sm font-bold cursor-pointer;
+    background-color: var(--light-grayish-cyan);
+   @apply rounded-md px-3 pt-[0.5rem] mx-1 pb-[0.4rem] text-sm font-bold cursor-pointer;
    transition: 0.3s all ease;
 }
 .dot {
