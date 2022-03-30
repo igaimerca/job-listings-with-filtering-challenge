@@ -83,11 +83,6 @@ code {
 .header {
     background-image: url(/images/bg-header-desktop.svg);
 }
-/* Header */
-
-/* Header */
-
-
 /* job card */
 .job-card {
     box-shadow: 0px 15px 20px -5px rgb(13 113 130 / 15%);
@@ -107,5 +102,8 @@ li {
 .dot {
     height: 7px;
     width: 7px;
+}
+.position:hover {
+    color: var(--primary);
 }
 /* job card */

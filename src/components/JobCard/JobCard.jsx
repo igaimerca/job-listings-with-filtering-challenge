@@ -24,7 +24,7 @@ function JobCard({
             FEATURED
           </span>
         </div>
-        <h1 className="font-bold very-dark-grayish-cyan-color">{position}</h1>
+        <h1 className="font-bold very-dark-grayish-cyan-color position cursor-pointer">{position}</h1>
         <div className="metadata flex items-center justify-between">
           <small className="dark-grayish-cyan-color">1d ago</small>
           <div className="dot rounded-full dark-grayish-cyan-bg"></div>
