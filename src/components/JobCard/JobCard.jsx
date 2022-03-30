@@ -1,6 +1,6 @@
 import React from "react";
 
-function JobCard({position, company, languages, role, level, contract, logo}) {
+function JobCard({position, company, langauges, role, level, contract, logo}) {
   return (
     <div className="w-9/12 my-7 m-auto job-card h-auto flex items-center flex-wrap justify-around py-7 px-3 rounded-md border-left">
       <div className="profile flex my-2">
@@ -25,6 +25,15 @@ function JobCard({position, company, languages, role, level, contract, logo}) {
           <small className="dark-grayish-cyan-color">{contract}</small>
           <small className="dark-grayish-cyan-color">USA only</small>
         </div>
+      </div>
+      <div className="tech-stack flex justify-end flex-[2] mx-3 primary-color font-bold">
+        <ul className="flex tech-stack-ul flex-wrap">
+            <li>{role}</li>
+            <li>{level}</li>
+          {langauges && langauges.map((langauge) => (
+              <li>{langauge}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
