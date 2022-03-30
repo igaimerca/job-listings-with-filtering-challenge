@@ -87,9 +87,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
   
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/igaimerca/job-listings-with-filtering-challenge)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://job-listings-with-filtering-challenge.vercel.app/)
 
   
 
