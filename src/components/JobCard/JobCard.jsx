@@ -8,6 +8,7 @@ function JobCard({
   level,
   contract,
   logo,
+  addOption
 }) {
   return (
     <div className="w-9/12 my-7 m-auto job-card h-auto flex items-center flex-wrap justify-around py-7 px-3 rounded-md border-left">
@@ -34,8 +35,8 @@ function JobCard({
       </div>
       <div className="tech-stack flex justify-end flex-[2] mx-3 primary-color font-bold">
         <ul className="flex tech-stack-ul flex-wrap">
-          <li>{role}</li>
-          <li>{level}</li>
+          <li onClick={() => addOption(role)}>{role}</li>
+          <li onClick={() => addOption(level)}>{level}</li>
           {langauges && langauges.map((langauge) => <li>{langauge}</li>)}
         </ul>
       </div>
