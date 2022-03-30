@@ -23,16 +23,21 @@ function App() {
     return (
         <div className="h-full">
             <Header />
+
             {filterOptions.length > 0 && (
-                <div className="flex-wrap rounded-md w-9/12 bg-white flex items-center justify-start shadow-md h-auto p-[1.1rem] -mt-8 m-auto">
+                <>
+                <div className="flex-wrap rounded-md w-9/12 relative bg-white flex items-center justify-start shadow-md h-auto p-[1.1rem] -mt-8 m-auto">
                     {filterOptions.length && filterOptions?.map((option) => (
                         <FilterOptions
                             option={option}
                             removeOption={(option) => setFilterOptions(filterOptions.filter((op) => op != option))} />
                     ))}
+                <span className="primary-color underline font-medium absolute right-2 cursor-pointer" onClick={() => setFilterOptions([])}>Clear</span>
                 </div>
-            )
-            }
+                </>
+            )}
+
+
             {data && data.map((job) => (
                 <JobCard
                     logo={job.logo}
