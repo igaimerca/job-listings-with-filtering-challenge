@@ -7,7 +7,7 @@ import { jobs } from './data';
 function App() {
 
     let [data, setData] = useState(jobs);
-    let [filterOptions, setFilterOptions] = useState(["Senior"]);
+    let [filterOptions, setFilterOptions] = useState([]);
 
     useEffect(() => {
         if (filterOptions.length) {
@@ -38,7 +38,7 @@ function App() {
                     logo={job.logo}
                     position={job.position}
                     company={job.company}
-                    langauges={job.languages}
+                    language={job.languages}
                     role={job.role}
                     level={job.level}
                     contract={job.contract}
