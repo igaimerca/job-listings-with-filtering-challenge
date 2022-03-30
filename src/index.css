@@ -12,9 +12,16 @@
 
 /* MOBILE */
 @media screen and (max-width: 375px) {
+    .job-card {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 855px) {
+    .new-badge {
+        margin: .5rem 0;
+    }
     
 }
-
 /* DESKTOP */
 @media screen and (max-width: 1440px) {
     
@@ -70,11 +77,16 @@ code {
     monospace;
 }
 
+
+
 /* Header */
 .header {
     background-image: url(/images/bg-header-desktop.svg);
 }
 /* Header */
+
+/* Header */
+
 
 /* job card */
 .job-card {
