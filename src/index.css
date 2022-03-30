@@ -69,3 +69,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header */
+.header {
+    background-image: url(/images/bg-header-desktop.svg);
+}
+/* Header */
