@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary: #5ba4a4;
+    --background: #effafa;
+    --light-grayish-cyan: #eef6f6;
+    --dark-grayish-cyan: #7b8e8e;
+    --very-dark-grayish-cyan: #2c3a3a;
+}
+
+/* MOBILE */
+@media screen and (max-width: 375px) {
+    
+}
+
+/* DESKTOP */
+@media screen and (max-width: 1440px) {
+    
+}
+
+.primary-color {
+    color: var(--primary);
+}
+.primary-bg {
+    background-color: var(--primary);
+}
+
+.background {
+    background-color: var(--background);
+}
+
+.light-grayish-cyan-color {
+    color: var(--light-grayish-cyan);
+}
+
+.light-grayish-cyan-bg {
+    background-color: var(--light-grayish-cyan);
+}
+
+.dark-grayish-cyan-color {
+    color: var(--dark-grayish-cyan);
+}
+.dark-grayish-cyan-bg {
+    background-color: var(--dark-grayish-cyan);
+}
+
+.very-dark-grayish-cyan-color {
+   color: var(--very-dark-grayish-cyan);
+}
+
+.very-dark-grayish-cyan-bg {
+    background-color: var(--very-dark-grayish-cyan);
+}
+.border-left {
+    border-left: 5px solid var(--primary);
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
