@@ -1,6 +1,20 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 :root {
     --primary: #5ba4a4;
@@ -8,74 +22,72 @@
     --light-grayish-cyan: #eef6f6;
     --dark-grayish-cyan: #7b8e8e;
     --very-dark-grayish-cyan: #2c3a3a;
-}
+}    
 
 /* MOBILE */
 @media screen and (max-width: 375px) {
     .job-card {
         width: 98%;
+        margin: 4rem 0;
+    } 
+    .profile {
+        position: absolute;
+        top: -52px;
+        left: 21px;
     }
-}
+    .profile img {
+        width: 84%;
+    }  
+}    
 @media screen and (max-width: 855px) {
-    .new-badge {
+    .new-badge, li {
         margin: .5rem 0;
-    }
+    } 
+   
     
-}
+}    
 /* DESKTOP */
 @media screen and (max-width: 1440px) {
     
-}
+}    
 
 .primary-color {
     color: var(--primary);
-}
+}    
 .primary-bg {
     background-color: var(--primary);
-}
+}    
 
 .background {
     background-color: var(--background);
-}
+}    
 
 .light-grayish-cyan-color {
     color: var(--light-grayish-cyan);
-}
+}    
 
 .light-grayish-cyan-bg {
     background-color: var(--light-grayish-cyan);
-}
+}    
 
 .dark-grayish-cyan-color {
     color: var(--dark-grayish-cyan);
-}
+}    
 .dark-grayish-cyan-bg {
     background-color: var(--dark-grayish-cyan);
-}
+}    
 
 .very-dark-grayish-cyan-color {
-   color: var(--very-dark-grayish-cyan);
-}
+   color: var(--very-dark-grayish-cyan); 
+}   
 
 .very-dark-grayish-cyan-bg {
     background-color: var(--very-dark-grayish-cyan);
-}
+}    
 .border-left {
     border-left: 5px solid var(--primary);
-}
+}    
 
-
-body {
-  margin: 0;
-  font-family: 'Spartan', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 
@@ -85,6 +97,7 @@ code {
 }
 /* job card */
 .job-card {
+    position: relative;
     box-shadow: 0px 15px 20px -5px rgb(13 113 130 / 15%);
 
 }
